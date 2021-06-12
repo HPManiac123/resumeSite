@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Stephanie's Resume</title>
+<style>
+.counter{
+background-color:white;
+color:red;
+font-weight:bold;}
+</style>
+
+<SCRIPT>
+expireDate = new Date
+expireDate.setMonth(expireDate.getMonth()+6)
+jcount = eval(cookieVal("jaafarCounter"))
+jcount++
+document.cookie = "jaafarCounter="+jcount+";expires=" + expireDate.toGMTString()
+
+function cookieVal(cookieName) {
+thisCookie = document.cookie.split("; ")
+for (i=0; i<thisCookie.length; i++){
+if (cookieName == thisCookie[i].split("=")[0]){
+return thisCookie[i].split("=")[1]
+}
+}
+return 0
+}
+
+function page_counter(){
+for (i=0;i<(7-jcount.toString().length);i++)
+document.write('<span class="counter">0</span>')
+for (y=0;y<(jcount.toString().length);y++)
+document.write('<span class="counter">'+jcount.toString().charAt(y)+'</span>')
+}
+</SCRIPT>
+
+<SCRIPT>
+page_counter(jcount);
+</SCRIPT>
+</head>
+<body>
+<style>
+.myDiv {
+  border: 2px outset black;
+  background-color: white;
+  text-align: center;
+}
+</style>
+<style>
+h2-1{
+  text-align: center;
+  color:blue;
+  font-size: 30px;
+  font-weight: bold;
+
+}
+h2-1:visited { color: red }
+h2-1:focus { color: blue }
+h2-1:hover { Color: green }
+h2-1:active { color: green }
+input {
+  display: none;
+}
+
+section > div {
+  display: none;
+}
+
+#radio-section-0:checked ~ #section-0 > div {
+  display: block;
+}
+
+#radio-section-1:checked ~ #section-1 > div {
+  display: block;
+}
+
+#radio-section-2:checked ~ #section-2 > div {
+  display: block;;
+}
+
+#radio-section-3:checked ~ #section-3 > div {
+  display: block;;
+}
+</style>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+<input type="radio" name="section" id="radio-section-0" />
+<input type="radio" name="section" id="radio-section-1" />
+<input type="radio" name="section" id="radio-section-2" />
+<input type="radio" name="section" id="radio-section-3" />
+
+<div class="myDiv">
+<h2><u>Stephanie Paredes</u></h2>
+    <!--Link-->
+    <a href="https://www.linkedin.com/in/stephanie-paredes-1013/">
+      <li>LinkedIn Page</li>
+    </a>
+    <a href="https://personalbucket-1013.s3.amazonaws.com/Stephanie_Paredes_Resume.pdf">
+      <li>Printable Resume</li>
+    </a>
+<p>I am pivoting into cloud engineering with six years of retail customer service experience. I love breaking CloudFormation templates to debug them and ensure they are lean. I have earned the AWS Certified Cloud Practitioner, AWS DevOps APN credentials, and aim to get more expertise, while working on client projects as an intern at an AWS APN Partner.</p>
+</div>
+<script language="javascript">DisplayVisits();</script>
+<section id="section-0">
+  <h2-1><label for="radio-section-0">Skills</label></h2-1>
+<div class="row">
+  <div class="column">
+  	<li>Scripting</li>
+      <ul>
+        <li>Python 3.x</li>
+        <li>Bash</li>
+   	 </ul>
+  	<li>DevOps:</li>
+  		<ul>
+          <li>CloudFormation</li>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>CodeStar (CI/CD)</li>
+		</ul>
+  	 <li>AWS:</li>
+        <ul>
+          <li>EC2</li>
+          <li>CloudWatch</li>
+          <li>S3</li>
+          <li>Amazon Rekognition</li>
+          <li>Lambda</li>
+		</ul>
+  	<li>Security:</li>
+        <ul>
+          <li>IAM</li>
+          <li>Security Groups</li>
+          <li>Secrets Manager</li>
+          <li>KMS</li>
+		</ul>
+
+ </div>
+  <div class="column">
+  	<li>Relational Databases:</li>
+        <ul>
+          <li>MariaDB</li>
+          <li>MySQL</li>
+          <li>NoSQL</li>
+          <li>DynamoDB</li>
+          <li>Aurora</li>
+		</ul>
+   	<li>Operating Systems (Client and Server):</li>
+        <ul>
+          <li>Windows XP</li>
+          <li>Windows 7</li>
+          <li>Windows 10</li>
+          <li>Ubuntu</li>
+          <li>CentOS</li>
+		</ul>
+ 	<li>Networking Technologies:</li>
+       <ul>
+         <li>VLAN</li>
+         <li>VPC</li>
+	</ul>
+    <li>Languages:</li>
+    	<ul>
+        <li>English</li>
+        <li>Spanish</li>
+        </ul>
+  </div>
+</div>
+</section>
+<section id="section-1">
+  <h2-1><label for="radio-section-1">Experience</label></h2-1>
+  <div>
+    <dl>
+  <dt><b>Cloud Practioner Intern</b></dt>
+  <dd>11/2020 to Present</dd>
+  <dt><b>Belle Fleur Technologies</b></dt>
+<ul>
+  <li>Deployed backend for a client’s PHP application using AWS CloudFormation within a DevOps team. Implemented role authentication to database instances, improving security.</li>
+  <li>Earned multiple AWS APN DevOps accreditations.</li>
+  <dt></dt>
+</ul>
+
+<dt><b>Cashier</b></dt>
+  <dd>10/2015 to 07/2020</dd>
+  <dt><b>BJs Wholesale Club</b></dt>
+<ul>
+  <li>Trained new hires in customer service and cash handling.</li>
+  <li>Worked in many roles, such as bakery, self-checkout supervisor, liquor store, and asset protection</li>
+</ul>
+  <dt></dt>
+<dt><b>Instacart</b></dt>
+  <dd>10/2016 to 11/2018</dd>
+  <dt><b>In-Store Shopper</b></dt>
+<ul>
+  <li>Trained staff how to improve efficiency under a strict time limit (49 seconds, per item).</li>
+</ul>
+  <dt></dt>
+</dl>
+  </div>
+</section>
+<section id="section-2">
+  <h2-1><label for="radio-section-2">Education & Cerificates</label></h2-1>
+  <div>
+  <h3><u>Education:</u></h3>
+    <dl>
+    <dt>Miami Dade College</dt>
+      <dd><small> December 2020 </small></dd>
+    <dd>College Credit Certificate in Enterprise Cloud Computing</dd>
+    <ul>
+    <dd><li>Linux+</li></dd>
+    <dd><li>Cloud Infrastructure and Services</li></dd>
+    <dd><li>Database Concepts Design</li></dd>
+    <dd><li>Networking Technologies</li></dd>
+    </ul>
+ <h3><u>Cerificates:</u></h3>
+   <dt>Amazon Web Services(AWS):</dt>
+   <!--Link-->
+    <a href="https://www.youracclaim.com/badges/16680579-54a4-4448-be26-96f0921f2016/public_url">
+       <dd>Certified Cloud Practitioner | 2020</dd>
+    </a>
+    <a href="https://www.youracclaim.com/badges/a2b97a6c-ad44-46ae-800a-150cc401196f/public_url">
+		<dd>AWS Business Professional</dd>
+        </a>
+    <a href="https://www.youracclaim.com/badges/a2b97a6c-ad44-46ae-800a-150cc401196f/public_url">
+    	<dd>AWS Technical Professional</dd>
+        </a>
+</dl>
+  </div>
+</section>
+<section id="section-3">
+  <h2-1><label for="radio-section-3">Gamedays</label></h2-1>
+  <div>
+<dl>
+<dt>AWS 2020 Security Jam</dt>
+<dd>12/02/20</dd>
+<dd></dd>
+<dt>AWS 2020 Modernization & DevOps Jam</dt>
+<dd>12/16/20</dd>
+<dd></dd>
+<dt>DevSlop Game Day: Deploying a Microservice Application to Kubernetes</dt>
+<dd>02/20/21</dd>
+<dd></dd>
+</dl>
+  </div>
+</section>
+</body>
+</html>
